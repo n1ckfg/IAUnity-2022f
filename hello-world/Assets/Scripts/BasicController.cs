@@ -1,19 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEngine.Networking;
 
-//[RequireComponent(typeof(NetworkIdentity))]
-//public class BasicController : NetworkBehaviour {
 public class BasicController : MonoBehaviour {
 
     private void Start() {
-		//if (!isLocalPlayer) return;
 		if (useKeyboard) wasdStart();
 		if (useMouse) mouseStart();
 	}
 
 	private void Update() {
-		//if (!isLocalPlayer) return;
 		if (useKeyboard) wasdUpdate();
 		if (useMouse) mouseUpdate();	
 	}
